@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  spark-app:
+    container_name: diabetes_project
+
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    ports:
+      - "8888:8888"
+
+    volumes:
+      - ..:/app
+
+    environment:
+      - PYSPARK_PYTHON=python3
+      - PYSPARK_DRIVER_PYTHON=python3
