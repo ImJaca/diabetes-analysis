@@ -2,7 +2,8 @@ version: "3.9"
 
 services:
   spark-app:
-    container_name: diabetes_project
+    container_name: diabetes_project # container name
+    image: disib # Image name
 
     build:
       context: ..
@@ -13,7 +14,3 @@ services:
 
     volumes:
       - ..:/app
-
-    environment:
-      - PYSPARK_PYTHON=python3
-      - PYSPARK_DRIVER_PYTHON=python3
