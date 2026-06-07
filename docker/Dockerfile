@@ -27,7 +27,9 @@ ENV PYSPARK_DRIVER_PYTHON=python3
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt && \
+    python3 -m ipykernel install --user --name python3
+
 
 COPY . .
 
