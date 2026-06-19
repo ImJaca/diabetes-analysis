@@ -1,3 +1,0 @@
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''"]
-nano docker/docker-compose.yml
-
