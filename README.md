@@ -39,7 +39,16 @@ No missing values were found during the initial data-quality analysis.
     precision, recall, confusion matrices, and ROC curves.
 
 ## Model Results
+  Model                        AUC-ROC   Accuracy   F1-score   Precision   Recall
+  --------------------- --------- ---------- ---------- ----------- --------
+  Logistic Regression      0.8137      0.7294        0.7625      0.8441     0.7294
+  XGBoost                       0.8223      0.7211        0.7562      0.8479     0.7211
 
+Both models achieved similar results. XGBoost obtained a slightly higher
+AUC-ROC, while Logistic Regression achieved slightly higher accuracy and
+F1-score.
+
+## Repository Structure
 ``` text
 .
 ├── .git/
